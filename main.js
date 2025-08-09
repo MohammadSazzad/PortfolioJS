@@ -14,22 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuOverlay = document.getElementById('menu-overlay');
     const modalClose = document.getElementById('modal-close');
 
-    // Mobile menu toggle functionality
     function toggleMobileMenu() {
         navbar.classList.toggle('active');
         menuOverlay.classList.toggle('active');
-        // Don't change the hamburger icon - keep it as hamburger
         if (navbar.classList.contains('active')) {
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+            document.body.style.overflow = 'hidden'; 
         } else {
-            document.body.style.overflow = 'auto'; // Restore scrolling
+            document.body.style.overflow = 'auto'; 
         }
     }
 
     function closeMobileMenu() {
         navbar.classList.remove('active');
         menuOverlay.classList.remove('active');
-        // Keep hamburger icon as is
         document.body.style.overflow = 'auto';
     }
 
@@ -38,29 +35,22 @@ document.addEventListener('DOMContentLoaded', function() {
     menuOverlay.addEventListener('click', closeMobileMenu);
     modalClose.addEventListener('click', closeMobileMenu);
 
-    // Close mobile menu when clicking on nav links and handle navigation
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
             
-            // Handle external links (like Resume) differently
             if (targetId.startsWith('http') || this.classList.contains('btn-box-special')) {
-                // Close mobile menu for external links but don't prevent default
                 closeMobileMenu();
-                return; // Let the browser handle the external link
+                return; 
             }
             
-            // For internal navigation links
             e.preventDefault();
             
-            // Close mobile menu first
             closeMobileMenu();
             
-            // Remove active class from all links and add to current
             navLinks.forEach(nav => nav.classList.remove('active'));
             this.classList.add('active');
             
-            // Handle navigation
             const targetSection = document.querySelector(targetId);
             
             if (targetSection) {
@@ -75,19 +65,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Close mobile menu when pressing Escape key
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && navbar.classList.contains('active')) {
             closeMobileMenu();
         }
     });
 
-    // Prevent clicks inside modal from closing it
     navbar.addEventListener('click', function(e) {
         e.stopPropagation();
     });
 
-    // Scroll-based active link detection
     window.addEventListener('scroll', function() {
         let current = '';
         const scrollPosition = window.pageYOffset + 100; 
@@ -102,7 +89,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         navLinks.forEach(link => {
-            // Only update internal navigation links, not external ones
             if (!link.getAttribute('href').startsWith('http') && !link.classList.contains('btn-box-special')) {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === '#' + current) {
