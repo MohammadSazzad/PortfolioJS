@@ -45,7 +45,7 @@ PortfolioJS/
 
 ## Screenshots
 
-![Portfolio Screenshot](cv.png)
+![Portfolio Screenshot](/Projects/Portfolio.png)
 
 ## Credits
 
