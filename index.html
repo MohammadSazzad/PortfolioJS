@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Mohammad Sazzad</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -12,318 +18,728 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <div>
+            <a href="#" class="logo">Mohammad Sazzad</a>
+        </div>
 
-        <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3">Services</a>
-            <a href="#Education" style="--i:4">Education</a>
-            <a href="#Skills" style="--i:5">Skills</a>
-            <a href="#project" style="--i:6">Project</a>
-            <a href="#contact" style="--i:7">Contact</a>
-        </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <navbar class="navbarIcon" id="navbar">
+            <div class="modal-close" id="modal-close">
+                <i class='bx bx-x'></i>
+            </div>
+            
+            <div class="modal-header">
+                <h3>Navigation</h3>
+            </div>
+            
+            <a href="#home" style="--i:1" class="nav-link active">Home</a>
+            <a href="#about" style="--i:2" class="nav-link">About</a>
+            <a href="#Skills" style="--i:5" class="nav-link">Skills</a>
+            <a href="#project" style="--i:6" class="nav-link">Project</a>
+            <a href="#Experience" style="--i:4" class="nav-link">Experience</a>
+            <a href="#contact" style="--i:7" class="nav-link">Contact</a>
+            <a class="btn-box-special" href="/CV/CV.pdf" style="--i:8">Resume</a>
+        </navbar>
     </header>
-    <section class="home" >
+    
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <section class="home" id="home">
         <img src="sazzad_1.png" alt="Sazzad" id="sazzad">
         <div class="home-content">
-            <h3>Hello, It's me</h3>
-            <h1>Mohammad Sazzad</h1>
-            <h3>And I'm a <span class="text"></span></h3>
-            <p>I'm a frontend developer. I have massive knowledge about JavaScript,Css and HTML.
-                Again, I know C, C++, JAVA as I practice cp on a regular basis. Previously I did 
-                many project such as 1D , 2D and Snake game again I build a general calculator
-                 using Java.In last semester i build an UI for food app.Lets works together and its
-                  a a great experience to work together. 
+            <h3>Hello, I am</h3>
+            <h1>Mohammad Sazzad.</h1>
+            <h3><span class="text"></span></h3>
+            <p>
+                Creative and detail-oriented Software Engineer with a strong passion for developing scalable and reliable software solutions. Committed to using modern tools and technologies to tackle real-world challenges and thrive in fast-paced, collaborative environments.
             </p>
+            <a href="#project" class="btn-box-special mt-3" >View My Works</a>
             <div class="home-sci">
-                <a href="https://www.facebook.com/Nm.sazzad.370" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
-                <a href="#" style="--i:9"><i class='bx bxl-whatsapp-square'></i></a>
                 <a href="https://github.com/MohammadSazzad/" style="--i:10"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/mohammadsazzadswe/" style="--i:7"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://wa.me/8801735718761?text=Hi%20Mohammad%20Sazzad!" target="_blank" title="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
             </div>
-            <a href="https://mohammadsazzad.github.io/Resume/" class="btn-box" >More About Me</a>
         </div>
     </section>
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="sazzad_1.png" alt="Sazzad">
-        </div>
-        <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Full Stack Developer</h4>
-            <p>I'm a frontend developer. I have massive knowledge about JavaScript,Css and HTML.
-                Again, I know C, C++, JAVA as I practice cp on a regular basis. Previously I did 
-                many project such as 1D , 2D and Snake game again I build a general calculator
-                 using Java.In last semester i build an UI for food app.Lets works together and its
-                  a a great experience to work together.
-                <br>
-                <a href="https://mohammadsazzad.github.io/Resume/" class="btn-box" id="Mx">More About Me</a>
-            </p>
+        <section class="about-education" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <p>
+                    Hey there! I'm Sazzad, a detail-oriented Software Engineer with a focus on creating reliable and scalable systems. I'm constantly exploring new technologies and thrive in fast-paced, collaborative environments where learning never stops.
+                </p>
+            </div>
+            
+            <div class="education-section" id="Education">
+                <h2>My <span>Education</span></h2>
+                <div class="education-timeline">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class='bx bxs-graduation'></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Shahjalal University of Science and Technology</h3>
+                            <h4>Bachelor of Engineering in Software Engineering (SWE)</h4>
+                            <span class="education-date">March 2022 - Present</span>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class='bx bxs-school'></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Gaibandha Government College</h3>
+                            <h4>Higher Secondary Certificate (HSC)</h4>
+                            <span class="education-date">March 2019 - March 2021</span>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class='bx bxs-book'></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Gaibandha N.H Modern High School</h3>
+                            <h4>Secondary School Certificate (SSC)</h4>
+                            <span class="education-date">January 2013 - February 2018</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section>
-        <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My <span>Services</span></h1>
-                <div class="services-list">
+        
+    <section class="skills-section" id="Skills">
+        <div class="skills-container">
+            <h1 class="skills-title">My <span>Skills</span></h1>
+            
+            <div class="skills-category">
+                <h2 class="category-title">Programming Languages</h2>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <i class='bx bxl-c-plus-plus skill-icon' style='color: #00599C'></i>
+                        <h3>C/C++</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-javascript skill-icon' style='color: #F7DF1E'></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-python skill-icon' style='color: #3776AB'></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-code-alt skill-icon' style='color: #239120'></i>
+                        <h3>C#</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-java skill-icon' style='color: #ED8B00'></i>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-html5 skill-icon' style='color: #E34F26'></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-css3 skill-icon' style='color: #1572B6'></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-data skill-icon' style='color: #336791'></i>
+                        <h3>SQL</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h2 class="category-title">Frameworks & Libraries</h2>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <i class='bx bxl-react skill-icon' style='color: #61DAFB'></i>
+                        <h3>React</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-nodejs skill-icon' style='color: #3C873A'></i>
+                        <h3>Node.js</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-server skill-icon' style='color: #000'></i>
+                        <h3>Express.js</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-bootstrap skill-icon' style='color: #7952B3'></i>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-tailwind-css skill-icon' style='color: #38BDF8'></i>
+                        <h3>Tailwind CSS</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-code-block skill-icon' style='color: #512BD4'></i>
+                        <h3>.NET</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-bar-chart skill-icon' style='color: #FF4B4B'></i>
+                        <h3>Streamlit</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-transfer skill-icon' style='color: #7952B3'></i>
+                        <h3>WebSocket</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-cloud skill-icon' style='color: #3448C5'></i>
+                        <h3>Cloudinary</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-credit-card skill-icon' style='color: #FFB300'></i>
+                        <h3>SSLCOMMERZ</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-jquery skill-icon' style='color: #0769AD'></i>
+                        <h3>jQuery</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h2 class="category-title">Tools & Platforms</h2>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <i class='bx bxl-github skill-icon' style='color: #181717'></i>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-visual-studio skill-icon' style='color: #007ACC'></i>
+                        <h3>VS Code</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-book-open skill-icon' style='color: #F37626'></i>
+                        <h3>Jupyter Notebook</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-docker skill-icon' style='color: #2496ED'></i>
+                        <h3>Docker</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-server skill-icon' style='color: #3ECF8E'></i>
+                        <h3>Supabase</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-data skill-icon' style='color: #336791'></i>
+                        <h3>PostgreSQL</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-github skill-icon' style='color: #181717'></i>
+                        <h3>GitHub Actions</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h2 class="category-title">Core Competencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <i class='bx bx-brain skill-icon' style='color: #FF6B6B'></i>
+                        <h3>Problem Solving</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-group skill-icon' style='color: #4ECDC4'></i>
+                        <h3>Team Leadership</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-cog skill-icon' style='color: #45B7D1'></i>
+                        <h3>Agile Methodologies</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-trending-up skill-icon' style='color: #96CEB4'></i>
+                        <h3>Project Management</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="projects-section" id="project">
+        <div class="projects-container">
+            <h1 class="projects-title">My <span>Projects</span></h1>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card d-flex flex-column justify-content-between">
                     <div>
-                        <i class='bx bx-code-alt' style='color:#00eeff'></i>
-                        <h2>Software Engineer</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor
-                            harum dolorem numquam nesciunt rerum maiores dolorum vitae iste molestiae.
-                            Explicabo autem illum asperiores sint natus nemo molestias, fugit deserunt.
-                            <a href="#" class="read">Learn More</a>
-                        </p>
+                        <div class="project-image">
+                            <img src="/Projects/Social_Sphere.png" alt="Social Sphere Screenshot" loading="lazy" />
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class='bx bx-globe'></i>
+                            </div>
+                            <div>
+                                <h3>Social Sphere</h3>
+                                <p class="project-subtitle">Full-Stack Social Media Platform</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p>Comprehensive social media platform with authentication, real-time messaging, content sharing, and moderation. Scalable architecture, deployed on Azure.</p>
+                        </div>
                     </div>
                     <div>
-                        <i class='bx bx-crop' style='color:#00eeff'></i>
-                        <h2>Fronted Developer</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor
-                            harum dolorem numquam nesciunt rerum maiores dolorum vitae iste molestiae.
-                            Explicabo autem illum asperiores sint natus nemo molestias, fugit deserunt.
-                            <a href="#" class="read">Learn More</a>
-                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Socket.IO</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">SendGrid</span>
+                            <span class="tech-tag">Cloudinary</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://victorious-flower-0a9eee30f.1.azurestaticapps.net" class="project-link project-demo" target="_blank" rel="noopener">
+                                <i class='bx bx-play-circle'></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/MohammadSazzad/Social_Sphere" class="project-link project-code" target="_blank" rel="noopener">
+                                <i class='bx bxl-github'></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="project-image">
+                            <img src="/Projects/Food_Pro.png" alt="Food Pro Screenshot" loading="lazy" />
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class='bx bx-mobile-alt'></i></div>
+                            <div>
+                                <h3>Food Pro</h3>
+                                <p class="project-subtitle">Full-Stack Food Delivery Platform</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p>Modern food delivery platform with restaurant browsing, cart, secure payments, and role-based management. Responsive UI for seamless experience.</p>
+                        </div>
                     </div>
                     <div>
-                        <i class='bx bx-happy' style='color:#00eeff'></i>
-                        <h2>Backend Developer</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque dolor
-                            harum dolorem numquam nesciunt rerum maiores dolorum vitae iste molestiae.
-                            Explicabo autem illum asperiores sint natus nemo molestias, fugit deserunt.
-                            <a href="#" class="read">Learn More</a>
-                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">SSLCOMMERZ</span>
+                            <span class="tech-tag">Cloudinary</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/MohammadSazzad/Solo_Project-Food_Pro-" class="project-link project-code" target="_blank" rel="noopener">
+                                <i class='bx bxl-github'></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="project-image">
+                            <img src="/Projects/4380.jpg" alt="Shoilpik Screenshot" loading="lazy" />
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class='bx bx-data'></i></div>
+                            <div>
+                                <h3>Shoilpik</h3>
+                                <p class="project-subtitle">Full-Stack E-commerce Web App</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p>Modern e-commerce platform with product management, secure payments, and responsive design. Built with React, Tailwind, Node.js, and MySQL.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">SSLCOMMERZ</span>
+                            <span class="tech-tag">Cloudinary</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/MohammadSazzad/SWE330-Project-Shoilpik" class="project-link project-code" target="_blank" rel="noopener">
+                                <i class='bx bxl-github'></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="project-image">
+                            <img src="/Projects/FinanceApp.png" alt="Finance App Screenshot" loading="lazy" />
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class='bx bx-game'></i></div>
+                            <div>
+                                <h3>Finance App</h3>
+                                <p class="project-subtitle">Personal Finance Management System</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p>Track expenses, manage profiles, and analyze financial data. Features robust authentication, real-time storage, and CI/CD deployment to Azure.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-tech">
+                            <span class="tech-tag">ASP.NET Core</span>
+                            <span class="tech-tag">Entity Framework</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Razor Views</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">jQuery</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">Azure</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://financeapp-dgg4d2b4b0epehfs.canadacentral-01.azurewebsites.net" class="project-link project-demo" target="_blank" rel="noopener">
+                                <i class='bx bx-play-circle'></i>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/MohammadSazzad/FinananceApp" class="project-link project-code" target="_blank" rel="noopener">
+                                <i class='bx bxl-github'></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="project-image">
+                            <img src="/Projects/SpamOrHam.png" alt="Spam Email Classifier Screenshot" loading="lazy" />
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class='bx bx-brain'></i></div>
+                            <div>
+                                <h3>Spam Email Classifier</h3>
+                                <p class="project-subtitle">ML Email Spam/Ham Classifier</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p>Predictive ML model for classifying emails as spam or ham with 95% accuracy. Built with Scikit-learn, Streamlit, and Python.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Jupyter Notebook</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">NumPy</span>
+                            <span class="tech-tag">Matplotlib</span>
+                            <span class="tech-tag">Anaconda</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/MohammadSazzad/Spam-email-classifier" class="project-link project-code" target="_blank" rel="noopener">
+                                <i class='bx bxl-github'></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="project-image">
+                            <img src="/Projects/4380.jpg" alt="Mini Minecraft Game Screenshot" loading="lazy" />
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class='bx bx-cloud'></i></div>
+                            <div>
+                                <h3>Mini Minecraft Game</h3>
+                                <p class="project-subtitle">2D Minecraft-like Game</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p>Simple 2D Minecraft built with Java and HTML5 Canvas. Explore, mine, and build in a procedurally generated world.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/MohammadSazzad/Java_Game." class="project-link project-code" target="_blank" rel="noopener">
+                                <i class='bx bxl-github'></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="project-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="project-image">
+                            <img src="/Projects/4380.jpg" alt="Car Racing Game Screenshot" loading="lazy" />
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class='bx bx-car'></i></div>
+                            <div>
+                                <h3>Car Racing Game (150)</h3>
+                                <p class="project-subtitle">2D C++ Racing Game</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p>Thrilling 2D car racing game built with C++ and SFML. Race against others in a fast-paced environment.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">SFML</span>
+                            <span class="tech-tag">Game Development</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/MohammadSazzad/Car_Racing" class="project-link project-code" target="_blank" rel="noopener">
+                                <i class='bx bxl-github'></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 8 -->
+                <div class="project-card d-flex flex-column justify-content-between">
+                    <div>
+                        <div class="project-image">
+                            <img src="/Projects/4380.jpg" alt="Task Manager Screenshot" loading="lazy" />
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon"><i class='bx bx-task'></i></div>
+                            <div>
+                                <h3>Profile based Task Manager CRUD app (Backend)</h3>
+                                <p class="project-subtitle">Node.js Task Manager API</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p>Backend application for managing tasks with user profiles, built using Node.js and Express. MySQL for data storage.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/MohammadSazzad/Profile-based-Task-Manager-CRUD-app" class="project-link project-code" target="_blank" rel="noopener">
+                                <i class='bx bxl-github'></i>
+                                Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <div id="portfolio" id="Education">
-            <div class="main-text" id="Education">
-                <h2><span>Education</span></h2>
 
-                <div class="portfolio-content1">
-                    <div class="row">
-                        <img src="school.jpg" alt="Schools">
-                        <div class="layer">
-                            <h5>School</h5>
-                            <p> I passed SSC from my beloved school Campus Gaibandha N.H modern High School. It is located at
-                                 the centered of Gaibandha sadar and a very wealthy popularity as it is more then 100 years old 
-                                 School in our town. I am very proudfull being an alumni of this famous school.
-                                <a href="https://www.gnhmhs.edu.bd/" style="color: aliceblue;"><i class='bx bx-link-external'></i></a>
-                            </p>
-                        </div>
+    <section class="achievements-section" id="Experience">
+        <div class="achievements-container">
+            <h1 class="achievements-title">Involvement & <span>Achievements</span></h1>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class='bx bx-trophy'></i>
                     </div>
-                    <div class="row">
-                        <img src="college.jpg" alt="Projects">
-                        <div class="layer">
-                            <h5>College</h5>
-                            <p>Gaibandha Govt. college is one of the reputed educational institutions in our country. It has a number of departments providing Honours and Master's courses.
-                                 The Department of English started working from 1996 with other nine honours deparments.
-                                <a href="https://bn.wikipedia.org/wiki/%E0%A6%97%E0%A6%BE%E0%A6%87%E0%A6%AC%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A7%E0%A6%BE_%E0%A6%B8%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A6%BF_%E0%A6%95%E0%A6%B2%E0%A7%87%E0%A6%9C" style="color: aliceblue;"><i class='bx bx-link-external'></i></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="sust (1).png" alt="Projects">
-                        <div class="layer">
-                            <h5>University</h5>
-                            <p>Shahjalal University of Science and Technology (SUST) was established in 1986. The only university of its kind at that time, it started it''s journey on the 13th of February 1991 with only three departments: Physics, Chemistry and Economics, 13 teachers and 205 students. It has now expanded to 7 schools, 27 departments , 2 institutes and and centers. The number of teachers has grown to 566 and the students to 8596.
-                                 Besides, the University has 12 affiliated colleges under the School of Medical Sciences with 4000 students.
-                                <a href="https://www.sust.edu/" style="color: aliceblue;"><i class='bx bx-link-external'></i></a>
-                            </p>
-                        </div>
-                    </div>
+                    <h3>Competitive Programming</h3>
+                    <p>1000+ Problems Solved on Codeforces,Codeshef, AtCoder, CSES and LeetCode</p>
+                    <span class="achievement-year">2022-present</span>
+                    <span class="achievement-year" style="font-size:0.95rem; color:#4A90E2; font-weight:600; display:block;">2025</span>
+                    <div style="margin-top:8px;"><a href="https://codeforces.com/profile/Mohammad_Sazzad" class="btn-certification" target="_blank" rel="noopener">Codeforces</a></div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <h1 class="sub-title">My <span>Skills</span></h1>
 
-    <section>
-        <div class="container1" id="Skills">
-            <h1 class="heading1">Technical Skills</h1>
-            <div class="Technical-bars">
-                <div class="bar">
-                    <i class='bx bxl-html5' style='color:#ff0099'></i>
-                    <div class="info">
-                        <span>HTML</span>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class='bx bx-medal'></i>
                     </div>
-                    <div class="progress-line html">
-                        <span></span>
-                    </div>
+                    <h3>Innovation Hub Cohort-2</h3>
+                    <p>1st Runner-up</p>
+                    <p>Best Innovation Award</p>
+                    <span class="achievement-year">2024</span>
                 </div>
-                <div class="bar">
-                    <i class='bx bxl-css3' style='color:#00eeff'></i>
-                    <div class="info">
-                        <span>CSS</span>
-                    </div>
-                    <div class="progress-line css">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <i class='bx bxl-javascript' style='color:#e8c813'></i>
-                    <div class="info">
-                        <span>JAVASCRIPT</span>
-                    </div>
-                    <div class="progress-line javascript">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <i class='bx bxl-java' style='color:#ff00ee'></i>
-                    <div class="info">
-                        <span>JAVA</span>
-                    </div>
-                    <div class="progress-line java">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar">
-                    <i class='bx bxl-flutter' style='color:#45de16'></i>
-                    <div class="info">
-                        <span>FLUTTER</span>
-                    </div>
-                    <div class="progress-line AD">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container1">
-            <h1 class="heading1">Professional Skills</h1>
-            <div class="radial-bars">
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="80" r="80"></circle>
-                    </svg>
-                    <div class="percentage">70%</div>
-                    <div class="text">Creativity</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                        <circle class="path path-2" cx="100" cy="80" r="80"></circle>
-                    </svg>
-                    <div class="percentage">65%</div>
-                    <div class="text">Communication</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                        <circle class="path path-3" cx="100" cy="80" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Problem Solving</div>
-                </div>
-                <div class="radial-bar">
-                    <svg x="0px" y="0px" viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                        <circle class="path path-4" cx="100" cy="80" r="80"></circle>
-                    </svg>
-                    <div class="percentage">50%</div>
-                    <div class="text">Team Work</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div id="portfolio" id="project">
-            <div class="main-text" id="project">
-                <h2>Latest <span>Project</span></h2>
 
-                <div class="portfolio-content">
-                    <div class="row">
-                        <img src="project.jpg" alt="Projects">
-                        <div class="layer">
-                            <h5>2D Game Design</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Ullam, sit. Illum temporibus, dolore commodi praesentium
-                                soluta sapiente veritatis autem aliquam, non modi dolorem
-                                optio, nemo mollitia eum doloremque cupiditate ratione.
-                                <a href="#" style="color: aliceblue;"><i class='bx bx-link-external'></i></a>
-                            </p>
-                        </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class='bx bx-medal'></i>
                     </div>
-                    <div class="row">
-                        <img src="project1.jpg" alt="Projects">
-                        <div class="layer">
-                            <h5>Creating Food App</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Ullam, sit. Illum temporibus, dolore commodi praesentium
-                                soluta sapiente veritatis autem aliquam, non modi dolorem
-                                optio, nemo mollitia eum doloremque cupiditate ratione.
-                                <a href="https://github.com/MohammadSazzad/250" style="color: aliceblue;"><i class='bx bx-link-external'></i></a>
-                            </p>
-                        </div>
+                    <h3>Hackathon Winner</h3>
+                    <p>Ideathon Champion(MU-2024)</p>
+                    <p>Presented Kotha (An AI-powered Browser Assistant)</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon" style="background: linear-gradient(135deg, #fff 0%, #4A90E2 100%); box-shadow: 0 4px 16px rgba(74,144,226,0.15);">
+                        <i class='bx bx-certification' style="color: #4A90E2; font-size: 2.2rem;"></i>
                     </div>
-                    <div class="row">
-                        <img src="cv.png" alt="Projects">
-                        <div class="layer">
-                            <h5>Responsive CV Design</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Ullam, sit. Illum temporibus, dolore commodi praesentium
-                                soluta sapiente veritatis autem aliquam, non modi dolorem
-                                optio, nemo mollitia eum doloremque cupiditate ratione.
-                                <a href="https://mohammadsazzad.github.io/Resume/" style="color: aliceblue;"><i class='bx bx-link-external'></i></a>
-                            </p>
-                        </div>
+                    <h3 style="font-size:1.15rem; letter-spacing:0.5px; margin-bottom:8px;">Certification</h3>
+                    <div style="margin-bottom:10px;">
+                        <span style="display:block; font-weight:600; color:#4A90E2; font-size:1.05rem;">Data Science with Python</span>
+                        <span style="display:block; color:#B8B8B8; font-size:0.98rem; margin-top:2px;">EDGE (ICT Division Bangladesh)</span>
                     </div>
-                    <div class="row">
-                        <img src="cp.jpg" alt="Projects">
-                        <div class="layer">
-                            <h5>3* Coder in Codechef and 1000+ Ratings in Codeforces</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Ullam, sit. Illum temporibus, dolore commodi praesentium
-                                soluta sapiente veritatis autem aliquam, non modi dolorem
-                                optio, nemo mollitia eum doloremque cupiditate ratione.
-                                <a href="https://codeforces.com/profile/Mohammad_Sazzad" style="color: aliceblue;"><i class='bx bx-link-external'></i></a>
-                            </p>
-                        </div>
-                    </div>
+                    <span class="achievement-year" style="font-size:0.95rem; color:#4A90E2; font-weight:600; display:block;">2025</span>
+                    <div style="margin-top:8px;"><a href="https://training.edge.gov.bd/storage/certificate/student-training/certificate_68283daa996602.91225378.pdf" class="btn-certification" target="_blank" rel="noopener">View Certificate</a></div>
                 </div>
             </div>
         </div>
     </section>
     <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Contact <span>Me</span></h2>
-            <h4>Let's Work Together</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                At ipsum asperiores id magnam totam aliquid corrupti autem.
-                Nesciunt deserunt reprehenderit ullam saepe aliquid, eos illo maiores voluptates.
-                Quas, mollitia ducimus!
-            <div class="contact-list">
-                <li><i class='bx bxs-send' style='color:#00ffee'></i> sazzad19@student.sust.edu</li>
-                <li><i class='bx bxs-phone-call' style='color:#00ffee'></i> +8801735718761</li>
-            </div>
-            <div class="contact-icon">
-                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-                <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-            </div>
-            </p>
+        <div class="contact-title">
+            <h2>Contact</h2>
         </div>
-        <div class="contact-form">
-            <form action="">
-                <input type="" placeholder="Enter Your Name" required>
-                <input type="" placeholder="Enter Your Email" required>
-
-                <input type="" placeholder="Enter Your Subject">
-                <Textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></Textarea>
-                <input type="submit" value="submit" class="send">
-            </form>
+        <div class="contact-content">
+            <div class="contact-text">
+                <h2>Let's <span>Connect</span></h2>
+                <h4>Ready to Collaborate</h4>
+                <p>I'm always excited about new opportunities and innovative projects. Whether you're looking for a dedicated software engineer, have a project in mind, or simply want to discuss technology, I'd love to hear from you!</p>
+                
+                <div class="contact-cta">
+                    <a href="mailto:sazzad19@student.sust.edu?subject=Let's Collaborate&body=Hi Mohammad Sazzad,%0D%0A%0D%0AI would like to discuss..." class="btn-contact-secondary">
+                        <i class='bx bxs-envelope'></i>
+                        Send Email
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class='bx bxs-envelope'></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Email</h4>
+                            <a href="mailto:sazzad19@student.sust.edu">sazzad19@student.sust.edu</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class='bx bxs-phone'></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+8801735718761">+880 173 571 8761</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <i class='bx bxs-map'></i>
+                        </div>
+                        <div class="contact-item-content">
+                            <h4>Location</h4>
+                            <p>Sylhet, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-connect">
+                    <h4>Connect on Social Media</h4>
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/mohammadsazzadswe/" target="_blank" title="LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com/MohammadSazzad/" target="_blank" title="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://wa.me/8801735718761?text=Hi%20Mohammad%20Sazzad!" target="_blank" title="WhatsApp">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Professional Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Mohammad Sazzad</h3>
+                <p>Passionate Software Engineer dedicated to creating innovative solutions and building scalable applications. Let's connect and explore opportunities to collaborate on exciting projects.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/mohammadsazzadswe/" target="_blank" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/MohammadSazzad/" target="_blank" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://wa.me/8801735718761?text=Hi%20Mohammad%20Sazzad!" target="_blank" title="WhatsApp">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="/CV/CV.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <div class="footer-contact-item">
+                    <i class='bx bxs-envelope'></i>
+                    <span>sazzad19@student.sust.edu</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class='bx bxs-phone'></i>
+                    <span>+880 173 571 8761</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class='bx bxs-map'></i>
+                    <span>Sylhet, Bangladesh</span>
+                </div>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Stay Connected</h4>
+                <p>Get updates about my latest projects and tech insights.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>&copy; 2024 Mohammad Sazzad. All rights reserved.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
     <div class="last-text">
-        <p>Developed by Mohammad Sazzad &#169; 2024</p>
+        <p>Developed with ❤️ by Mohammad Sazzad</p>
     </div>
     <a href="#" class="top"><i class='bx bxs-up-arrow-alt'></i></a>
 
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 
