@@ -5,7 +5,7 @@ export const metadata = {
   description:
     'Portfolio of Mohammad Sazzad — Full-Stack Software Engineer specializing in production web applications, secure APIs, and cloud-ready delivery.',
   icons: {
-    icon: '/logo.png'
+    icon: process.env.NODE_ENV === 'production' ? '/PortfolioJS/logo.png' : '/logo.png'
   }
 };
 

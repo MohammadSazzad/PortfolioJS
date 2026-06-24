@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Menu, FileText } from 'lucide-react';
-import { navLinks } from '@/data/portfolio';
+import { navLinks, profile } from '@/data/portfolio';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -87,7 +87,7 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="ml-2">
+          <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="ml-2">
             <Button variant="default" size="sm" className="bg-slate-900 hover:bg-slate-800 text-white gap-2">
               <FileText className="h-4 w-4" />
               Resume
@@ -131,7 +131,7 @@ export default function Header() {
               ))}
               <div className="mt-3 pt-3 border-t border-slate-100">
                 <SheetClose asChild>
-                  <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                  <a href={profile.resume} target="_blank" rel="noopener noreferrer">
                     <Button variant="default" size="sm" className="w-full bg-slate-900 hover:bg-slate-800 text-white gap-2">
                       <FileText className="h-4 w-4" />
                       Download Resume

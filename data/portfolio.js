@@ -31,6 +31,9 @@ function LinkedinIcon(props) {
   );
 }
 
+// Base path for GitHub Pages deployment (empty in dev, prefixed in production)
+const BASE = process.env.NODE_ENV === 'production' ? '/PortfolioJS' : '';
+
 export const profile = {
   name: 'Mohammad Sazzad',
   role: 'Full-Stack Software Engineer',
@@ -38,11 +41,11 @@ export const profile = {
   email: 'sazzad19@student.sust.edu',
   phone: '+880 173 571 8761',
   phoneHref: 'tel:+8801735718761',
-  resume: '/cv.pdf',
+  resume: `${BASE}/cv.pdf`,
   headline: 'I build full-stack products that actually work in production.',
   summary:
     'Software Engineering student and full-stack developer who enjoys building real web applications — from authentication and payments to real-time features and APIs. I like taking vague product ideas and turning them into clean, working software.',
-  image: '/sazzad_1.png'
+  image: `${BASE}/sazzad_1.png`
 };
 
 export const navLinks = [
@@ -145,7 +148,7 @@ export const projects = [
   {
     title: 'Social Sphere',
     subtitle: 'Full-stack social media platform',
-    image: '/social_sphere.png',
+    image: `${BASE}/social_sphere.png`,
     alt: 'Social Sphere project screenshot',
     category: 'Featured',
     problem: 'Built a social platform with authentication, real-time messaging, content sharing, moderation tools, and media uploads — all in one product.',
@@ -159,7 +162,7 @@ export const projects = [
   {
     title: 'Food Pro',
     subtitle: 'Food delivery platform',
-    image: '/food_pro.png',
+    image: `${BASE}/food_pro.png`,
     alt: 'Food Pro project screenshot',
     category: 'Full Stack',
     problem: 'A food delivery platform where restaurants manage menus and customers browse, cart, and checkout — all in one responsive app.',
@@ -170,7 +173,7 @@ export const projects = [
   {
     title: 'Finance App',
     subtitle: 'Personal finance management system',
-    image: '/finance.png',
+    image: `${BASE}/finance.png`,
     alt: 'Finance App project screenshot',
     category: 'Backend Heavy',
     problem: 'A personal finance tool for tracking expenses, managing profiles, and reviewing spending — with a clean backend.',
@@ -184,7 +187,7 @@ export const projects = [
   {
     title: 'Shoilpik',
     subtitle: 'E-commerce web application',
-    image: '/project.jpg',
+    image: `${BASE}/project.jpg`,
     alt: 'Shoilpik project screenshot',
     category: 'Commerce',
     problem: 'An e-commerce platform with product management, shopping cart, payment processing, and media storage.',
@@ -195,7 +198,7 @@ export const projects = [
   {
     title: 'Spam Email Classifier',
     subtitle: 'Machine learning classifier',
-    image: '/spam.png',
+    image: `${BASE}/spam.png`,
     alt: 'Spam Email Classifier screenshot',
     category: 'AI/ML',
     problem: 'An ML pipeline that classifies emails as spam or ham using a practical scikit-learn workflow.',
@@ -206,7 +209,7 @@ export const projects = [
   {
     title: 'Task Manager API',
     subtitle: 'Profile-based CRUD backend',
-    image: '/project.jpg',
+    image: `${BASE}/project.jpg`,
     alt: 'Task Manager API project screenshot',
     category: 'API',
     problem: 'A backend service needed profile-aware task management with clean CRUD operations.',

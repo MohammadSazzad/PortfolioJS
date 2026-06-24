@@ -1,4 +1,4 @@
-import { socialLinks } from '@/data/portfolio';
+import { socialLinks, profile } from '@/data/portfolio';
 import { Separator } from '@/components/ui/separator';
 
 const footerLinks = [
@@ -7,7 +7,7 @@ const footerLinks = [
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
   { label: 'Achievements', href: '#achievements' },
-  { label: 'Resume', href: '/cv.pdf', external: true }
+  { label: 'Resume', href: profile.resume, external: true }
 ];
 
 export default function Footer() {
