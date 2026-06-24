@@ -37,9 +37,10 @@
             
             <a href="#home" style="--i:1" class="nav-link active">Home</a>
             <a href="#about" style="--i:2" class="nav-link">About</a>
+            <a href="#Experience" style="--i:4" class="nav-link">Experience</a>
             <a href="#Skills" style="--i:5" class="nav-link">Skills</a>
             <a href="#project" style="--i:6" class="nav-link">Project</a>
-            <a href="#Experience" style="--i:4" class="nav-link">Experience</a>
+            <a href="#achievements" style="--i:9" class="nav-link">Achievements</a>
             <a href="#contact" style="--i:7" class="nav-link">Contact</a>
             <a class="btn-box-special" href="cv.pdf" target="_blank" rel="noopener noreferrer" style="--i:8">Resume</a>
         </navbar>
@@ -82,7 +83,7 @@
                         <div class="education-content">
                             <h3>Shahjalal University of Science and Technology</h3>
                             <h4>Bachelor of Engineering in Software Engineering (SWE)</h4>
-                            <span class="education-date">March 2022 - Present</span>
+                            <span class="education-date">March 2022 - November 2025</span>
                         </div>
                     </div>
                     
@@ -111,7 +112,78 @@
             </div>
         </div>
     </section>
-        
+
+    <!-- Work Experience Section -->
+    <section class="work-experience-section" id="Experience">
+        <div class="experience-container">
+            <h1 class="experience-title">Work <span>Experience</span></h1>
+            
+            <div class="experience-grid">
+                <!-- Experience Entry 1 -->
+                <div class="exp-card">
+                    <div class="exp-card-accent"></div>
+                    <div class="exp-card-body">
+                        <div class="exp-card-top">
+                            <div class="exp-company">
+                                <div class="exp-icon">
+                                    <i class='bx bxs-briefcase'></i>
+                                </div>
+                                <div>
+                                    <h3>Versatilo Group</h3>
+                                    <span class="exp-role">Junior Full Stack Developer</span>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class='bx bxs-calendar'></i> February 2026 - November 2025</span>
+                            </div>
+                        </div>
+                        <p class="exp-description">
+                            Developing and maintaining the Cargo Module for OTA services, overseeing end-to-end operations including bookings, ticketing, and weight management. Engineered backend solutions using NestJs for robust service delivery.
+                            Contributed to healthcare-related projects by managing backend architecture, implementing authentication and authorization mechanisms, and integrating SMTP-based mail verification. Administered VMP and visa processing workflows, configured push notifications via Firebase FCM, and integrated Stripe payment processing.
+                            Worked on a government shadow project, developing KYC verification and a secure voting system using Laravel.
+                        </p>
+                        <div class="exp-tech">
+                            <span class="tech-tag">NestJs</span>
+                            <span class="tech-tag">NextJs</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Entry 2 -->
+                <div class="exp-card">
+                    <div class="exp-card-accent"></div>
+                    <div class="exp-card-body">
+                        <div class="exp-card-top">
+                            <div class="exp-company">
+                                <div class="exp-icon">
+                                    <i class='bx bxs-briefcase'></i>
+                                </div>
+                                <div>
+                                    <h3>Deep Mind Labs AI</h3>
+                                    <span class="exp-role">Trainee AI/ML Engineer</span>
+                                </div>
+                            </div>
+                            <div class="exp-meta">
+                                <span class="exp-date"><i class='bx bxs-calendar'></i> December 2025 - January 2026</span>
+                            </div>
+                        </div>
+                        <p class="exp-description">
+                            Acquired hands-on expertise in OpenCV and YOLO for object detection and classification tasks. Worked in an R&D-driven environment, conducting research to design and build a novel pipeline for an object detection project.
+                        </p>
+                        <div class="exp-tech">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">RAG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="skills-section" id="Skills">
         <div class="skills-container">
             <h1 class="skills-title">My <span>Skills</span></h1>
@@ -162,12 +234,20 @@
                         <h3>React</h3>
                     </div>
                     <div class="skill-box">
+                        <i class='bx bx-code-curly skill-icon' style='color: #000'></i>
+                        <h3>NextJs</h3>
+                    </div>
+                    <div class="skill-box">
                         <i class='bx bxl-nodejs skill-icon' style='color: #3C873A'></i>
                         <h3>Node.js</h3>
                     </div>
                     <div class="skill-box">
                         <i class='bx bx-server skill-icon' style='color: #000'></i>
                         <h3>Express.js</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-cube skill-icon' style='color: #E0234E'></i>
+                        <h3>NestJs</h3>
                     </div>
                     <div class="skill-box">
                         <i class='bx bxl-bootstrap skill-icon' style='color: #7952B3'></i>
@@ -201,6 +281,26 @@
                         <i class='bx bxl-jquery skill-icon' style='color: #0769AD'></i>
                         <h3>jQuery</h3>
                     </div>
+                    <div class="skill-box">
+                        <i class='bx bx-code-alt skill-icon' style='color: #FF2D20'></i>
+                        <h3>Laravel</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bxl-django skill-icon' style='color: #092E20'></i>
+                        <h3>Django</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-camera skill-icon' style='color: #5C3EE8'></i>
+                        <h3>OpenCV</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-brain skill-icon' style='color: #00BFFF'></i>
+                        <h3>YOLO</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-credit-card skill-icon' style='color: #635BFF'></i>
+                        <h3>Stripe</h3>
+                    </div>
                 </div>
             </div>
             <div class="skills-category">
@@ -233,6 +333,10 @@
                     <div class="skill-box">
                         <i class='bx bxl-github skill-icon' style='color: #181717'></i>
                         <h3>GitHub Actions</h3>
+                    </div>
+                    <div class="skill-box">
+                        <i class='bx bx-cloud skill-icon' style='color: #FFCA28'></i>
+                        <h3>Firebase FCM</h3>
                     </div>
                 </div>
             </div>
@@ -551,7 +655,7 @@
         </div>
     </section>
 
-    <section class="achievements-section" id="Experience">
+    <section class="achievements-section" id="achievements">
         <div class="achievements-container">
             <h1 class="achievements-title">Involvement & <span>Achievements</span></h1>
             
@@ -697,6 +801,7 @@
                     <li><a href="#Skills">Skills</a></li>
                     <li><a href="#project">Projects</a></li>
                     <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
                     <li><a href="cv.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
                 </ul>
             </div>
