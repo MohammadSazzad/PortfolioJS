@@ -1,57 +1,68 @@
 # PortfolioJS
 
-A modern, fully responsive developer portfolio built with HTML, CSS, and JavaScript.
+A modern, responsive developer portfolio for Mohammad Sazzad, migrated from static HTML/CSS/JavaScript to Next.js.
 
 ## Features
 
-- Professional, mobile-first design
-- Project showcase with images, tech stack, and live/code links
-- Skills section (Languages, Frameworks & Libraries, Tools)
-- Achievements and certifications
-- Contact section with social links
-- Modal mobile navigation
-- Smooth scrolling and section navigation
-- Custom favicon and branding
+- Next.js App Router single-page portfolio
+- Component-based sections for hero, about, education, experience, skills, projects, achievements, contact, and footer
+- Data-driven project, skills, education, experience, and social link content
+- Responsive modal mobile navigation
+- Smooth scrolling and active section tracking
+- Typed hero text animation
+- Static export for GitHub Pages
 
-## Folder Structure
+## Project Structure
 
-```
+```text
 PortfolioJS/
-├── index.html
-├── style.css
-├── main.js
-├── README.md
-├── [images and assets]
+├── app/
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+├── components/
+├── data/
+│   └── portfolio.js
+├── public/
+│   ├── CNAME
+│   ├── cv.pdf
+│   └── images
+├── next.config.js
+├── package.json
+└── README.md
 ```
 
-## How to Use
+## Development
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/MohammadSazzad/PortfolioJS.git
-   ```
-2. **Open `index.html` in your browser.**
-3. **Customize:**
-   - Update your projects, skills, and achievements in `index.html`.
-   - Replace images in the root folder as needed.
-   - Edit styles in `style.css` for further customization.
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the local development server:
+
+```bash
+npm run dev
+```
+
+Build the static export:
+
+```bash
+npm run build
+```
+
+The production static site is generated in `out/`.
+
+## Deployment
+
+GitHub Actions builds the Next.js static export and deploys the `out/` directory to GitHub Pages. The custom domain is preserved in `public/CNAME`.
 
 ## Technologies Used
 
-- HTML5
-- CSS3 (Flexbox, Grid, Responsive Design)
-- JavaScript (ES6+)
-- [Boxicons](https://boxicons.com/) for icons
-
-## Screenshots
-
-![Portfolio Screenshot](portfolio.png)
-
-## Credits
-
-- Design and code: Mohammad Sazzad
-- Icons: [Boxicons](https://boxicons.com/)
-
-## License
-
-This project is open source and free to use for personal portfolios.
+- Next.js
+- React
+- Bootstrap
+- Boxicons
+- Typed.js
+- CSS3
