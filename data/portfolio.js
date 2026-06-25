@@ -155,7 +155,6 @@ export const projects = [
     outcome: 'React and Node.js app powered by PostgreSQL, Socket.IO, SendGrid, Cloudinary, and deployed on Azure Static Apps.',
     tech: ['React', 'Node.js', 'Express.js', 'PostgreSQL', 'Socket.IO', 'Cloudinary', 'Azure'],
     links: [
-      { label: 'Live Demo', href: 'https://victorious-flower-0a9eee30f.1.azurestaticapps.net' },
       { label: 'Source Code', href: 'https://github.com/MohammadSazzad/Social_Sphere' }
     ]
   },
@@ -180,7 +179,7 @@ export const projects = [
     outcome: 'ASP.NET Core app with Entity Framework, PostgreSQL, Razor views, Bootstrap frontend, and deployed on Azure.',
     tech: ['ASP.NET Core', 'Entity Framework', 'PostgreSQL', 'Supabase', 'Azure'],
     links: [
-      { label: 'Live Demo', href: 'https://financeapp-dgg4d2b4b0epehfs.canadacentral-01.azurewebsites.net' },
+      { label: 'Live Demo', href: 'https://finance-web-hbhpgxcggrcfedcx.eastasia-01.azurewebsites.net' },
       { label: 'Source Code', href: 'https://github.com/MohammadSazzad/FinananceApp' }
     ]
   },

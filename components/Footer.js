@@ -21,7 +21,7 @@ export default function Footer() {
               href="#home"
               className="text-lg font-bold tracking-tight text-slate-900"
             >
-              Mohammad<span className="text-sky-600">.</span>Sazzad
+              Mohammad<span className="text-sky-600"> </span>Sazzad
             </a>
             <p className="mt-3 text-sm leading-relaxed text-slate-500 max-w-xs">
               Full-stack developer who builds real products for real people.
